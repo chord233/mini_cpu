@@ -1,0 +1,23 @@
+# Temporary files
+tmp/
+
+# Simulation files
+*.vcd
+*.o
+*.out
+
+# Build files
+build/
+*.hex
+*.dump
+
+# Editor files
+.vscode/
+.idea/
+*~
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
