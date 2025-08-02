@@ -1,6 +1,49 @@
 # mini_cpu
-使用 Verilog 硬件描述语言，基于 RV32I 指令集，设计的 32 位的经典五级流水线的处理器核。
-学习极客时间课程后尝试自己完成的基于RISC-V的32位五级流水线CPU的实现。
 
+A 32-bit classic five-stage pipelined processor core designed using Verilog HDL, based on the RV32I instruction set.
+This is an implementation of a RISC-V 32-bit five-stage pipelined CPU, developed as a learning project after studying computer architecture courses.
 
-参考链接：[计算机基础实战课](https://time.geekbang.org/column/intro/100117801?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search)
+[中文版 README](README_zh.md)
+
+## Features
+- Based on RISC-V RV32I instruction set
+- Classic five-stage pipeline architecture
+- Implemented in Verilog HDL
+- Simulation and testing support
+
+## Build and Run
+
+### Compile Assembly Test Program
+```bash
+make asm
+```
+
+### Run CPU Simulation
+```bash
+make cpu
+```
+
+### View Simulation Waveforms
+```bash
+make wave
+```
+
+### Clean Temporary Files
+```bash
+make clean
+```
+
+## Project Structure
+- `rtl/` - Verilog source code (CPU core modules)
+- `sim/` - Simulation related files
+- `tb/` - Testbench files
+- `tmp/` - Temporary files directory
+
+## Dependencies
+- RISC-V Toolchain (riscv64-linux-gnu)
+- Icarus Verilog (iverilog)
+- GTKWave (waveform viewer)
+- Python3
+
+## Reference
+[Computer Architecture Course](https://time.geekbang.org/column/intro/100117801?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search)

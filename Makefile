@@ -9,7 +9,7 @@ TEST_HEX := ./sim/asm/build/test.dat
 # 编译汇编程序，输出二进制指令
 asm:
 	make -C ./sim/asm 
-	python ./sim/asm/word2byte.py
+	python3 ./sim/asm/word2byte.py
 
 # 对CPU进行仿真
 cpu:
